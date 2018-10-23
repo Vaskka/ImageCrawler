@@ -102,9 +102,9 @@ AUTOTHROTTLE_ENABLED = True
 
 # mysql setting
 MYSQL_HOST = '127.0.0.1'
-MYSQL_DBNAME = 'table_img'
+MYSQL_DBNAME = 'table_image'
 MYSQL_USER = 'root'
-MYSQL_PASSWORD = '0000'
+MYSQL_PASSWORD = 'czm19990216'
 
 
 # 时间格式

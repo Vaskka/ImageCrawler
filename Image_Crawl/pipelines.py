@@ -29,7 +29,6 @@ class JsonExplorerPipeline(object):
         self.json_explorer.start_exporting()
 
     def process_item(self, item, spider):
-        self.json_explorer.export_item(item)
         return item
 
     def spider_closed(self, spider):
@@ -59,7 +58,7 @@ class MysqlTwistedPipeline(object):
 
     def process_item(self, item, spider):
         # 使用twisted将item处理变成异步操作
-        fullpath = settings.project_dir + "\\images\\" + item['img_file_path'].replace('/', "\\")
+        fullpath = settings.project_dir + "/images/" + item['img_file_path']
         item['img_base64'] = utils._from_path_to_base64(fullpath)
 
         pass
